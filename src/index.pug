@@ -1,0 +1,27 @@
+doctype html
+html
+  head(lang="en")
+
+    meta(charset="UTF-8")
+    title pomodoro clock
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="styles.css")
+
+  body
+
+    .app-container
+
+      p.timer-display 0:00
+
+      div
+        select
+          option(value="5") 5 minutes
+          option(value="10") 10 minutes
+          option(value="15") 15 minutes
+          option(value="20") 20 minutes
+          option(value="25") 25 minutes
+          option(value="30") 30 minutes
+
+        button#start-button START
+
+    script(src="scripts.js")
