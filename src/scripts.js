@@ -15,6 +15,7 @@ function timer(seconds) {
     const secondsLeft = Math.round((then - Date.now()) / 1000);
     if (secondsLeft < 0) {
       ring();
+      document.title = "GET BACK TO WORK!!!";
       clearInterval(countdown);
       return;
     }
