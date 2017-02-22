@@ -13,12 +13,33 @@ body
   height: 100vh
   background: #5b7bcf
 
+svg
+  position: absolute
+  z-index: -1
+
+.circle
+  position: relative
+  animation-name: fill
+  animation-duration: 0
+  animation-fill-mode: forwards
+  animation-timing-function: linear
+  animation-play-state: paused
+  stroke-dashoffset: -1571
+  stroke-dasharray: 1571
+  stroke: red
+
+@keyframes fill
+  0%
+    stroke-dashoffset: -1571
+  100%
+    stroke-dashoffset: 0
+
 .app-container
+  position: relative
   height: 500px
   width: 500px
-  background: #61a9d2
-  border: solid 4px #000000
-  border-radius: 20px
+  // background: #61a9d2
+  border-radius: 50%
   display: flex
   flex-direction: column
   align-items: center
@@ -56,3 +77,6 @@ select
   select,
   #start-button
     font-size: 24px
+
+  svg
+    display: none

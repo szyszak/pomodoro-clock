@@ -21,6 +21,8 @@ function timer(seconds) {
     }
     showTimeLeft(secondsLeft);
   }, 1000);
+
+  startProgressCircle(select.value);
 };
 
 function showTimeLeft(seconds) {
@@ -38,6 +40,15 @@ function ring() {
   const audio = new Audio(`sounds/${randomAudio}.mp3`);
 
   audio.play();
+};
+
+function startProgressCircle(duration) {
+  const path = document.querySelector(".circle");
+  path.classList.remove("circle");
+  setTimeout(() => {
+    path.classList.add("circle")}, 10);
+  path.style.animationDuration = `${duration * 60}s`;
+  path.style.animationPlayState = "running";
 };
 
 startButton.addEventListener("click", () => {
