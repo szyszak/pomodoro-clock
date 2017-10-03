@@ -1,4 +1,4 @@
-let countdown;
+let countdown = 0;
 const timerDisplay = document.querySelector(".timer-display");
 const startButton = document.querySelector("#start-button");
 const select = document.querySelector("select");
@@ -11,11 +11,11 @@ function timer(seconds) {
 
   showTimeLeft(seconds);
 
-  countdown = setInterval( () => {
+  countdown = setInterval(() => {
     const secondsLeft = Math.round((then - Date.now()) / 1000);
     if (secondsLeft < 0) {
       ring();
-      document.title = "GET BACK TO WORK!!!";
+      document.title = "You can take a break now.";
       clearInterval(countdown);
       return;
     }

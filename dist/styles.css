@@ -16,7 +16,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 100vh;
-  background: #5b7bcf; }
+  background: #2555bb; }
 
 svg {
   position: absolute;
@@ -38,7 +38,7 @@ svg {
   animation-play-state: paused;
   stroke-dashoffset: -1571;
   stroke-dasharray: 1571;
-  stroke: red; }
+  stroke: #ff0000; }
 
 @-webkit-keyframes fill {
   0% {

@@ -1,12 +1,11 @@
 {
-  "name": "gulp-sass-pug-browsersync",
-  "version": "1.0.0",
-  "description": "A starter project for gulp-sass-pug-browsersync",
+  "name": "pomodoro_clock",
+  "version": "1.1.0",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Brdaa",
+  "author": "szyszak",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.5",
@@ -14,16 +13,5 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-pug": "^3.2.0",
     "gulp-sass": "^2.3.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "keywords": [
-    "gulp",
-    "sass",
-    "pug",
-    "browsersync"
-  ],
-  "homepage": ""
+  }
 }
